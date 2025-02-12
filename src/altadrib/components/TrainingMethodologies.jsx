@@ -70,6 +70,8 @@ const TrainingMethodologies = () => {
                     </div>
                 </div>
             </div>
+
+
         </div>
     );
 };

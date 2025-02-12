@@ -56,16 +56,16 @@
 
 .fixed-appointment-btn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 1.25rem; /* 20px / 16 */
+    right: 1.25rem; /* 20px / 16 */
     background-color: #144D99;
     color: white;
-    padding: 15px 28px;
-    font-size: 18px;
+    padding: 0.9375rem 1.75rem; /* 15px / 16 and 28px / 16 */
+    font-size: 1.125rem; /* 18px / 16 */
     font-weight: 600;
     border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem; /* 8px / 16 */
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2); /* 4px / 16 and 10px / 16 */
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     z-index: 1000;
@@ -102,7 +102,7 @@
     }
     
     .hero-section{
-        min-height: 60px;   
+        min-height: 3.75rem;   
     }
 
 

@@ -95,19 +95,63 @@
   /* Responsive Styles */
   @media (max-width: 576px) {
     .branches {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px; /* Add spacing between items */
     }
-  
+
     .branch {
-      width: 90%;
-      text-align: center;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        padding-left: 20px; /* Adjust spacing */
     }
-  
-    .branch .vertical-line,
-    .horizontal-line,
-    .top-line {
-      display: none; 
+
+    /* Vertical line on the left to form a timeline */
+    .branch::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background-color: #134DA0;
     }
-  }
-  
+
+    /* Add small horizontal connectors */
+    .branch .vertical-line {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #134DA0;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .horizontal-line, .top-line {
+        display: none;
+    }
+
+    /* Adjust heading font size */
+    .branch h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    /* Center list items */
+    .branch ul {
+        text-align: left;
+        padding-left: 1.25rem;
+    }
+
+    .branch li {
+        font-size: 1rem;
+        color: #134DA7;
+    }
+
+    .branch::before {
+      height: 140%;
+    }
+}
