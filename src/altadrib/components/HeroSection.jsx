@@ -2,7 +2,11 @@ import React from 'react';
 import tadribHero from '../../assets/tadribHero.jpg';
 import './HeroSection.css';
 
-const HeroSection = () => {
+const HeroSection = ({ formRef }) => {
+    const handleButtonClick = () => {
+        formRef.current.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <div className="hero-section">
             <img src={tadribHero} alt="Background Image" className="hero-image" />
@@ -16,7 +20,7 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            <button className="fixed-appointment-btn">
+            <button className="fixed-appointment-btn" onClick={handleButtonClick}>
                 Register Now
             </button>
         </div>
