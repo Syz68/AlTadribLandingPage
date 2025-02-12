@@ -105,5 +105,9 @@
         min-height: 3.75rem;   
     }
 
+    .fixed-appointment-btn {
+        font-size: 0.9rem; /* 18px / 16 */
+        font-weight: 500;
+    }
 
 }
