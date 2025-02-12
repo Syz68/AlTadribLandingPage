@@ -1,0 +1,42 @@
+.training-containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: fit-content;
+    padding: 1rem 0rem;
+    background-image: url('https://www.aster.stldigitaltech.com/fileadmin/user_upload/20819-scaled.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    color: white;
+}
+
+.training-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;   
+}
+
+.accordian-container {
+    width: 80%;
+    margin-top: 0.625rem;
+}
+
+.accordion-item {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    background-color: #e0f2fe;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #134D92;
+}
+
+.accordion-body {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}

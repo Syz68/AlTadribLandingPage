@@ -7,10 +7,12 @@ function App() {
 
   return (
     <div>
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Altadrib />} />
         <Route path="al-tadrib" element={<Altadrib />} />
-      </Routes>
+      </Routes> */}
+
+      <Altadrib/>
     </div>
   )
 }

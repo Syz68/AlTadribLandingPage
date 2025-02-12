@@ -9,6 +9,7 @@ import TrainingMethodologies from './components/TrainingMethodologies';
 import FormSection from './components/FormSection';
 import AffiliationPart from './components/AffiliationPart';
 import LeadershipMessage from './components/LeadershipMessage';
+import TrainingType from './components/TrainingType';
 
 const Altadrib = () => {
     const formRef = useRef(null);
@@ -23,7 +24,7 @@ const Altadrib = () => {
             <KeyFeatureSection />
             <TrainingMethodologies />
             <AffiliationPart/>
-            {/* here one more section need to add the acordian part */}
+            <TrainingType/>
             <LeadershipMessage/>
         </div>
     );
