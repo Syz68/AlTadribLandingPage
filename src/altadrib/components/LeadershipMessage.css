@@ -1,0 +1,167 @@
+.leadership-container {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .leadership-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .highlight {
+    color: #134da0;
+    text-decoration: none;
+
+  }
+  
+  /* Card Layout */
+  .message-card {
+    display: flex;
+    align-items: top;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: 2rem auto;
+  }
+  
+  /* Image Alignment */
+  .profile {
+    flex: 0 0 auto;
+    padding-right: 1.5rem;
+  }
+  
+  .profile img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Text Content */
+  .message-content {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #134da0;
+  }
+  
+  .designation {
+    font-size: 1rem;
+    color: #134da0;
+    font-weight: 600;
+  }
+  
+  .quote {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #134da0;
+  }
+  
+  .message {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  /* contact part css  */
+
+  .contact-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f8f9fa;
+  }
+  
+  .contact-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 1rem;
+  }
+  
+  .highlights {
+    color: #0d47a1;
+    text-decoration: none;
+  }
+
+  .bottomborder {
+    width: 5.1rem;
+    color: #0d47a1;
+    border-bottom: 3.5px solid #0d47a1;
+    padding-bottom: 2px;
+    padding-top: 4px;
+    margin: auto; 
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .contact-card {
+    background: #f1f3f5;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contact-card h3 {
+    font-size: 1.23rem;
+    color: #0d47a1;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-card p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #134da0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact-card {
+      width: 80%;
+    }
+  } 
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .message-card {
+      flex-direction: column;
+      text-align: center;
+      padding: 1.5rem;
+      
+    }
+  
+    .profile {
+      padding-right: 0;
+      padding-bottom: 1rem;
+    }
+  
+    .message-content {
+      text-align: center;
+    }
+
+    .leadership-container{
+        padding: 0rem;
+    }
+  }
+  
