@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
-import Altardrib from './altadrib/altadrib'
+import Altardrib from './altadrib/Altadrib'
 
 function App() {
 
