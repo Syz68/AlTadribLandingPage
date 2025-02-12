@@ -1,0 +1,113 @@
+/* Container */
+.training-container {
+    text-align: center;
+    padding: 0px 20px 20px 20px;
+    position: relative;
+  }
+  
+  /* Underline below the heading */
+  .underline {
+    width: 120px;
+    height: 3px;
+    background-color: #134DA0;
+    margin: 10px auto;
+  }
+  
+  /* Tree structure */
+  .tree {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+  }
+  
+  /* Top vertical line */
+  .top-line {
+    width: 0px;
+    height: 40px;
+    background-color: #134DA0;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Horizontal connecting line */
+  .horizontal-line {
+    width: 80%;
+    height: 1.5px;
+    background-color: #134DA0;
+    position: absolute;
+    top: 40px;
+    left: 10%;
+  }
+  
+  /* Branch container */
+  .branches {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 80px;
+  }
+  
+  /* Individual branch */
+  .branch {
+    text-align: center;
+    width: 16%;
+    min-width: 160px;
+    position: relative;
+
+  }
+  
+  /* Vertical line connecting each branch */
+  .branch .vertical-line {
+    width: 1.5px;
+    height: 40px;
+    background-color: #134DA0;
+    position: absolute;
+    /* change to change vertical line positon */
+    top: -40px; 
+    left: 50%;
+  }
+  
+  /* Heading styles */
+  .branch h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #134DA0;
+  }
+  
+  /* Bullet points */
+  .branch ul {
+    list-style-type: disc;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    width: fit-content;
+    list-style-position: inside;
+  }
+  
+  .branch li {
+    font-size: 1rem;
+    color: #134DA7;
+
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 576px) {
+    .branches {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .branch {
+      width: 90%;
+      text-align: center;
+    }
+  
+    .branch .vertical-line,
+    .horizontal-line,
+    .top-line {
+      display: none; 
+    }
+  }
+  

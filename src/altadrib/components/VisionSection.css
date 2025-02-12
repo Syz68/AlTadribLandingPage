@@ -1,0 +1,101 @@
+/* Background Section */
+.vision-container {
+    position: relative;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 2.5rem 1rem;
+}
+
+/* Overlay */
+.vision-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(33, 64, 151, 0.5); /* Blue overlay */
+}
+
+/* Content Wrapper */
+.vision-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+/* Title */
+.vision-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+/* Grid Layout */
+.vision-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Box Styling */
+.vision-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #1E3A8A; /* Blue */
+    transition: transform 0.3s ease-in-out;
+}
+
+.vision-box:hover {
+    transform: scale(1.05);
+}
+
+/* Subtitle */
+.vision-subtitle {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Text */
+.vision-text {
+    font-size: 1rem;
+    color: #475569; /* Slate */
+}
+
+/* Full-width box for values */
+.vision-box-full {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .vision-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 2rem 5rem;
+    }
+
+    .vision-box-full {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 576px) {
+    .vision-container {
+        height: 800px;
+    }
+
+    .vision-title {
+        font-size: 2rem;
+    }
+}

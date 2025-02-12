@@ -1,0 +1,120 @@
+/* Feature Section */
+.feature-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+/* Section Title */
+.feature-title {
+    text-align: center;
+}
+
+.feature-title h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.highlight-text {
+    color: #1E3A8A; /* Blue */
+}
+
+/* Underline */
+.underline {
+    width: 100px;
+    height: 3px;
+    background-color: #1E3A8A;
+    margin: 12px auto;
+}
+
+/* Section Description */
+.feature-description {
+    text-align: center;
+    max-width: 1200px;
+    line-height: 1.1;
+    margin-top: 1rem;
+}
+
+/* Features Grid */
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1100px;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+
+/* Feature Card */
+.feature-card {
+    background-color: white;
+    border: 4px solid #E5E7EB; /* Light Gray */
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); 
+}
+
+/* Feature Icon */
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEF3C7; /* Light Yellow */
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    transition: background 0.3s ease-in-out;
+}
+
+.feature-icon img {
+    width: 50px;
+}
+
+/* Different Background Colors */
+.red-bg {
+    background-color: #FEE2E2; /* Light Red */
+}
+
+.green-bg {
+    background-color: #D1FAE5; /* Light Green */
+}
+
+/* Feature Card Title */
+.feature-card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1E3A8A;
+    margin-bottom: 0.5rem;
+}
+
+/* Feature Card Text */
+.feature-card p {
+    font-size: 1rem;
+    color: #6B7280; /* Slate Gray */
+    /* text-align: center; */
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .feature-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

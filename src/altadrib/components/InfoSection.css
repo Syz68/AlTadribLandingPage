@@ -1,0 +1,63 @@
+/* Info Section Container */
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    gap: 40px;
+}
+
+/* Box Styling */
+.info-box {
+    max-width: 1200px;
+    border-left: 4px solid #1E3A8A; /* Blue border */
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.3s ease-in-out;
+    background-color: white;
+}
+
+/* Hover Effect */
+.info-box:hover {
+    transform: translateY(-6px);
+}
+
+/* Title Styling */
+.info-title {
+    font-size: 30px; /* 3xl */
+    font-weight: 600;
+    color: #1E3A8A; /* Blue */
+}
+
+/* Paragraph Text */
+.info-text {
+    margin-top: 1rem;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Centered Footer */
+.info-footer {
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #1E3A8A;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 576px) {
+    .info-title{
+        font-size: 18px;
+    }
+
+    .info-text{
+        font-size: 14px;
+    }
+
+    .info-footer{
+        font-size: 18px;
+    }
+}
