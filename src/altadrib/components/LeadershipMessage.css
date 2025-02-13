@@ -143,11 +143,7 @@
     .contact-card p {
       font-size: 1rem;
     }
-  } 
 
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
     .message-card {
       flex-direction: column;
       text-align: center;
@@ -167,5 +163,14 @@
     .leadership-container{
         padding: 0rem;
     }
-  }
+
+    .leadership-title{
+      padding-top: 0.625rem;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+  } 
+
+  
+
   

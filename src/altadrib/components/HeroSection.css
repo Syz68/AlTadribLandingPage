@@ -108,8 +108,11 @@
     }
 
     .fixed-appointment-btn {
-        font-size: 0.9rem; /* 18px / 16 */
-        font-weight: 500;
+        top: unset; /* Adjust top position for mobile */
+        bottom: 1.5rem;
+        right: 1rem; /* Adjust right position for mobile */
+        font-size: 0.9rem; /* Adjust font size for mobile */
+        padding: 0.625rem 1 rem; /* Adjust padding for mobile */
     }
 
 }
