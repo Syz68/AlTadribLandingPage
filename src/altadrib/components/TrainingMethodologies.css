@@ -152,11 +152,71 @@
     }
 
     .branch::before {
-      height: 140%;
+      height: 190%;
     }
 
     .tree {
       margin-top: -3.3125rem;
       margin-bottom: 1rem;
     }
+}
+
+/* latest css after changing here */
+
+.branch-heading {
+  background-color: transparent;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #134DA0;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: color 0.3s ease-in-out;
+  border: 2px solid #134DA0;
+  border-radius: 5px;
+  transition: 
+    color 0.3s ease-in-out, 
+    background-color 0.3s ease-in-out, 
+    border-color 0.3s ease-in-out, 
+    transform 0.2s ease-in-out, 
+    box-shadow 0.3s ease-in-out;
+}
+
+.branch-heading:hover {
+  color: white;
+  background-color: #134DA0; /* Blue background on hover */
+  border-color: #0f3b73;
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0px 4px 10px rgba(19, 77, 160, 0.3); /* Soft shadow glow */
+}
+
+/* Hide lists initially */
+.branch ul {
+  display: none;
+  list-style-type: disc;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  width: fit-content;
+  list-style-position: inside;
+  padding-top: 7px;
+  
+}
+
+/* Show list when branch is active */
+.branch ul {
+  display: block;
+}
+
+.branch ul {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+/* Show list with animation */
+.branch ul.active {
+  max-height: 300px; /* Adjust as needed */
+  opacity: 1;
 }

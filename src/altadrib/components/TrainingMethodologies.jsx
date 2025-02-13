@@ -1,77 +1,77 @@
-import React from "react";
+import React, { useState } from "react";
 import "./TrainingMethodologies.css"; // Import the CSS file
 
 const TrainingMethodologies = () => {
+    const [openSections, setOpenSections] = useState({});
+
+    const toggleSection = (index) => {
+        setOpenSections((prev) => ({
+            ...prev,
+            [index]: !prev[index], // Toggle the visibility
+        }));
+    };
+
+    const methodologies = [
+        {
+            title: "Simulation-Based Training",
+            items: ["High-Fidelity Simulations", "Skills Labs"],
+        },
+        {
+            title: "Didactic Learning",
+            items: ["Lectures and Seminars", "Online Modules"],
+        },
+        {
+            title: "Competency-Based Assessments",
+            items: ["OSCEs (Clinical Exams)", "Checklists and Skills Validation"],
+        },
+        {
+            title: "Continuing Education and In-Service Training",
+            items: ["Workshops and Seminars", "Certifications and Specialized Training"],
+        },
+        {
+            title: "Preceptorship Programs",
+            items: ["Preceptorship"],
+        },
+    ];
+
     return (
         <div className="training-container">
             {/* Heading */}
             <h1 className="fw-bold text-center">
-                AL Tadrib Training<span style={{ color: "#134DA0" }}> Methodologies</span>
+                AL Tadrib Training <span style={{ color: "#134DA0" }}>Methodologies</span>
             </h1>
             <div className="underline"></div>
 
             {/* Tree Structure */}
             <div className="tree">
-                {/* Top Vertical Line */}
                 <div className="top-line"></div>
-
-                {/* Horizontal Line */}
                 <div className="horizontal-line"></div>
 
                 {/* Branches */}
                 <div className="branches">
-                    {/* First Column */}
-                    <div className="branch">
-                        <div className="vertical-line"></div>
-                        <h3>Simulation-Based Training</h3>
-                        <ul>
-                            <li>High-Fidelity Simulations</li>
-                            <li>Skills Labs</li>
-                        </ul>
-                    </div>
+                    {methodologies.map((method, index) => (
+                        <div key={index} className="branch">
+                            <div className="vertical-line"></div>
+                            {/* Heading as a Button */}
+                            <button
+                                className="branch-heading"
+                                onClick={() => toggleSection(index)}
+                            >
+                                {method.title}
+                            </button>
 
-                    {/* Second Column */}
-                    <div className="branch">
-                        <div className="vertical-line"></div>
-                        <h3>Didactic Learning</h3>
-                        <ul>
-                            <li>Lectures and Seminars</li>
-                            <li>Online Modules</li>
-                        </ul>
-                    </div>
-
-                    {/* Third Column */}
-                    <div className="branch">
-                        <div className="vertical-line"></div>
-                        <h3>Competency-Based Assessments</h3>
-                        <ul>
-                            <li>OSCEs (Clinical Exams)</li>
-                            <li>Checklists and Skills Validation</li>
-                        </ul>
-                    </div>
-
-                    {/* Fourth Column */}
-                    <div className="branch">
-                        <div className="vertical-line"></div>
-                        <h3>Continuing Education and In-Service Training</h3>
-                        <ul>
-                            <li>Workshops and Seminars</li>
-                            <li>Certifications and Specialized Training</li>
-                        </ul>
-                    </div>
-
-                    {/* Fifth Column */}
-                    <div className="branch">
-                        <div className="vertical-line"></div>
-                        <h3>Preceptorship Programs</h3>
-                        <ul>
-                            <li>Preceptorship</li>
-                        </ul>
-                    </div>
+                            {/* List (conditionally rendered) */}
+                            {openSections[index] && (
+                                <ul className={openSections[index] ? "active" : ""}>
+                                {method.items.map((item, idx) => (
+                                  <li key={idx}>{item}</li>
+                                ))}
+                              </ul>
+                            )}
+                        </div>
+                    ))}
                 </div>
             </div>
-
-
         </div>
     );
 };

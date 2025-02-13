@@ -19,7 +19,7 @@ const TrainingType = () => {
         <div className="training-containers">
             <h1 className="training-title">OUR TRAINING TYPE</h1>
             <div className="accordian-container">
-                <Accordion defaultActiveKey="0">
+                <Accordion defaultActiveKey={null}>
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>The Training</Accordion.Header>
                         <Accordion.Body>
