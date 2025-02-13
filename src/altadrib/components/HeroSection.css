@@ -56,11 +56,11 @@
 
 .fixed-appointment-btn {
     position: fixed;
-    bottom: 1.25rem; /* 20px / 16 */
+    top: 1.25rem; /* 20px / 16 */
     right: 1.25rem; /* 20px / 16 */
     background-color: #144D99;
     color: white;
-    padding: 0.9375rem 1.75rem; /* 15px / 16 and 28px / 16 */
+    padding: 0.83rem 1.69rem; /* 15px / 16 and 28px / 16 */
     font-size: 1.125rem; /* 18px / 16 */
     font-weight: 600;
     border: none;
@@ -69,6 +69,8 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     z-index: 1000;
+    bottom: unset;
+    
 }
 
 .fixed-appointment-btn:hover {
