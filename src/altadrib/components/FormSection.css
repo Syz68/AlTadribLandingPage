@@ -31,6 +31,10 @@
         width: 95%;
         height: 30rem;
     }
+
+    .formcontainer h1 {
+        font-size: 1.45rem;
+    }
 }
 
 /* modal css */

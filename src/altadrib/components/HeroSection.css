@@ -70,12 +70,32 @@
     transition: all 0.3s ease-in-out;
     z-index: 1000;
     bottom: unset;
+    animation: bounceIn 1s ease-out;
     
+}
+
+/* Bounce-in Keyframes */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .fixed-appointment-btn:hover {
     background-color: #10469d;
-    transform: scale(1.05);
+    transform: scale(1.08);
+    transition: transform 0.3s ease-in-out;
 }
 
 
@@ -112,7 +132,7 @@
         bottom: 1.5rem;
         right: 1rem; /* Adjust right position for mobile */
         font-size: 0.9rem; /* Adjust font size for mobile */
-        padding: 0.625rem 1 rem; /* Adjust padding for mobile */
+        padding: 0.625rem 1.1rem; /* Adjust padding for mobile */
     }
 
 }

@@ -28,3 +28,7 @@ const Altadrib = () => {
 };
 
 export default Altadrib;
+
+/*
+    change i done in 1,2,3,4, 5th and 6th pending.
+*/

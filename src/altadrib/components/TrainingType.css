@@ -13,7 +13,7 @@
 .training-title {
     font-size: 2rem;
     font-weight: bold;
-    color: white;   
+    color: white;
 }
 
 .accordian-container {
@@ -35,8 +35,91 @@
 }
 
 .accordion-body {
+    font-size: 1.02rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    /* Add margin-bottom to create gap between accordion bodies */
     background: white;
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 1.69rem;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease-in-out; /* Add transition for smooth hover effect */
+}
+
+.accordion-body:hover {
+    transform: translateY(-6px);
+}
+
+.accordion-button {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.accordionbutton {
+    display: flex;
+
+}
+
+.accordionbutton button {
+    padding: 1.25rem 1.25rem;
+    margin-left: 1.25rem;
+    background-color: white;
+    border-radius: 0.625rem;
+    border-color: #134D92;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #134D92;
+}
+
+.buttontextpart {
+    font-size: 1rem;
+}
+
+.h3,
+h3 {
+    color: #134D92;
+}
+
+.accordiondiv {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row-reverse;
+
+}
+
+.accordiondiv img {
+    max-width: 12.5rem;
+    height: 12.5rem;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.discalimerpart{
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 1.25rem;
+    padding: 1.25rem;
+    padding-bottom: 0rem;
+}
+
+@media (max-width: 576px) {
+    .accordiondiv img {
+        display: none;
+        /* Hide the image on mobile view */
+    }
+
+    .accordionbutton {
+        flex-direction: column;
+
+    }
+
+    .accordionbutton button {
+        padding: 0.625rem 1.25rem;
+        font-size: 1rem;
+        width: 100%;
+        justify-content: center;
+        margin-left: 0rem;
+        margin-top: 0.625rem
+    }
 }
