@@ -1,5 +1,6 @@
 import React from "react";
 import './LeadershipMessage.css'
+
 const LeadershipMessage = () => {
     return (
         <div className="leadership-container">

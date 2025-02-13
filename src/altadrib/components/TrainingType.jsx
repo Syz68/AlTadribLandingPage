@@ -54,7 +54,7 @@ const TrainingType = () => {
                             <h3>Life Support Training</h3>
                             <div className="accordiondiv">
                                 <img src="https://www.aster.stldigitaltech.com/fileadmin/user_upload/authorized_training_center.png" alt="" />
-                                <p>
+                                <p id="lifesupportpara">
                                     Aster Hospital's Life Support Training Center in Al Qusais offers a variety of courses under American Heart Association (AHA) certified instructors in liaison with the Dubai Health Authority (DHA) and Dubai Corporation Ambulance Services (DCAS). These courses are conducted within the center, providing healthcare professionals and non medicals with hands-on training using advanced mannequins. The training is designed to enhance existing knowledge and skills in resuscitation and emergency cardiovascular care, both basic and advanced. All courses are regularly updated to align with the latest AHA guidelines.<br /><br />
                                     For more information, please contact altadrib.lifesupport@asterhospital.com
                                 </p>
@@ -382,7 +382,6 @@ const TrainingType = () => {
 
                         </Accordion.Body>
                         <Accordion.Body>
-                            <h2>remove after compiltion</h2>
                             <h3>Family & Friends CPR</h3>
                             <div className="accordiondiv">
                                 <img src="https://www.aster.stldigitaltech.com/fileadmin/user_upload/family-friends.png" alt="" />

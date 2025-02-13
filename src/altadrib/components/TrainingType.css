@@ -103,6 +103,7 @@ h3 {
     padding-bottom: 0rem;
 }
 
+
 @media (max-width: 576px) {
     .accordiondiv img {
         display: none;
@@ -121,5 +122,9 @@ h3 {
         justify-content: center;
         margin-left: 0rem;
         margin-top: 0.625rem
+    }
+
+    #lifesupportpara {
+        margin-left: 1rem;
     }
 }
